@@ -7,7 +7,28 @@
 
         updateScoreElement();
 
+        let isAutoPlaying = true;
+        let intervalId;
 
+
+        function autoPlay() { 
+            
+            if (isAutoPlaying === false) {
+                intervalId = setInterval(function(){
+                    const PlayerMove = pickComputerMove();
+                    playGame(PlayerMove);
+                },1000);
+                isAutoPlaying=true;
+            }
+            else {
+                clearInterval(intervalId);
+                isAutoPlaying = false;
+            }
+
+            document.querySelector('.js-auto-play-btn')
+                .innerHTML = isAutoPlaying ? 'Stop Play' : 'Auto Play';
+
+        }
 
         
         function playGame(PlayerMove) {
