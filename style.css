@@ -35,11 +35,17 @@
             transition: background-color 0.3s ease-out, transform 0.3s ease-out;
         }
 
-        .resetScore-btn:hover {
+        .resetScore-btn:hover, .js-auto-play-btn:hover {
             color: rgb(20, 19, 19);
             background-color: rgb(255, 255, 255);
             transform: scale(1.1);
             transition: background-color 0.3s ease-out, transform 0.3s ease-out;
+        }
+
+        .resetScore-btn:active, .js-auto-play-btn:active {
+            background-color: rgb(18, 14, 14);
+            transform: scale(0.9);
+            transition: background-color 0.1s ease-in, transform 0.1s ease-in;
         }
 
         .js-result {
