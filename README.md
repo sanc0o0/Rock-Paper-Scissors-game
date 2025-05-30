@@ -16,7 +16,8 @@ Click on Rock, Paper, or Scissors and see if you can beat the computer!
 - CSS
 - JavaScript
 
-
+## Live preview
+[https://htmlpreview.github.io/?https://github.com/sanc0o0/Rock-Paper-Scissors-game/blob/main/index.html]
 
 ## License
 This project is open source under the [MIT License](LICENSE).
